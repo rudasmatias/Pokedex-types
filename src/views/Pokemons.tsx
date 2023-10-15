@@ -1,10 +1,15 @@
-import React from "react";
+import { useState } from "react";
+
+import { Header, Footer } from "../components/index";
 
 const Pokemons = () => {
+  const [query, setQuery] = useState("");
   return (
-    <div>
-      <h1>Pokemons</h1>
-    </div>
+    <>
+      <Header query={query} setQuery={setQuery} />
+      <h1>Pokémon!!</h1>
+      <Footer />
+    </>
   );
 };
 
