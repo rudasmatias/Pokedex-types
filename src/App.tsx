@@ -7,7 +7,6 @@ import { Pokemons, Detail, Items } from "./views/index";
 function App() {
   return (
     <div className="app">
-      <h1>Mi primera Pokedéx</h1>
       <Routes>
         <Route path="/pokemons" element={<Pokemons />} />
         <Route path="/pokemon/:name" element={<Detail />} />
